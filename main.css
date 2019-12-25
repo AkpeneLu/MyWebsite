@@ -1,0 +1,59 @@
+html {
+    min-height: 100%;
+    background-image: url(Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+
+    font-family: 'Josefin Slab', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+header {
+    background-color: rgba(238, 238, 238, 0.9);
+    padding: 20px;
+}
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header.sticky + content {
+  padding-top: 102px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: inline-flex;
+    padding: 10px;
+}
+
+/*.main {
+    background-image: url(Background.jpg);
+}*/
+
+h1 {
+    color: #EEE;
+    font-size: 120px;
+    font-family: 'Josefin Slab';
+}
+
+h2 {
+    color: #EEE;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+sub {
+    color: #EEE;
+}
+
+footer{ 
+
+}
