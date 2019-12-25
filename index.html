@@ -7,36 +7,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> <!--for responsiveness across devices-->
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-        <link rel="shortcut icon" href="/img/icons/favicon.ico">
+        <link rel="icon" href="/img/icons/favicon.ico">
     </head>
 
     <body>
         
-        <header>
+        <header id="myHeader">
             <nav>
                 <ul>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="art">ART</a></li>
-                    <li><a href="contact">CONTACT</a></li>
+                    <li><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link" href="#art">ART</a></li>
+                    <li><a class="nav-link" href="#contact">CONTACT</a></li>
+
+                    <li>
+                        <div class="socialInHeader">
+                            <a class="social-linkInHeader" href="https://www.instagram.com/francescas_art/">
+                                <i class="fab fa-instagram social-icon"></i>
+                            </a>
+                        
+                            <a class="social-linkInHeader" href="https://www.linkedin.com/in/francesca-lumor/?locale=en_US">
+                                <i class="fab fa-linkedin social-icon"></i>
+                            </a>
+                        
+                            <a class="social-linkInHeader" href="https://github.com/AkpeneLu/">
+                                <i class="fab fa-github social-icon"></i>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <section class="main">
-            <h1>Francesca A. Lumor</h1>
-            <sub>"Art is not what you see, but what you make others see" - Edgar Degas</sub>
+            <!--<h1>Francesca A. Lumor</h1>-->
+            <figure class="logo">
+                <img src="WhiteLogo.png" alt="my initials FAL as a logo" />
+            </figure>
+            
+            <sub><i>"Art is not what you see, but what you make others see"</i> - Edgar Degas</sub>
         </section>
 
-        <section class="about">
-            <h2>ABOUT</h2>
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <article>
+                I am a Norwegian self-taught artist with a bachelor’s degree in psychology from the University of Oslo, currently studying informatics.
+                
+                Welcome to my portfolio.
+            </article>
+                
+            <article>
+                I have been drawing for as long as I can remember but hated it when I was younger, swearing when I grow up I will never pick up a pencil again. Look at me now? Creating art is my passion, which I discovered while studying Arts, Crafts and Design with my General Studies in secondary school. What I love about it the most is seeing how a simple pencil-line on a paper can transform into a beautiful picture. Now, I want to showcase my art to others through my own website.
+            </article>
+
+            <article>
+                Pencils are my tools of choice, both colour and graphite. I also like to try out things outside of my comfort zone, so I also paint sometimes using oil, acrylic and watercolours.
+            </article>
+
+            <article>
+                A great piece of artwork captures the feelings of the moment, and I do my best to accomplish just that.
+            </article>
         </section>
 
-        <section class="art">
+        <section class="art" id="art">
             <h2>ART</h2>
         </section>
 
-        <section class="contact">
-            <h2>CONTACT</h2>
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <section>
+                <article>
+                    Thanks for visiting! I also do commissioned drawings, as seen below. Contact me via the form if you’re interested, or follow me on Social Media.
+
+                    <div class="social">
+                        <a class="social-link" href="https://www.instagram.com/francescas_art/">
+                            <i class="fab fa-instagram social-icon"></i>
+                        </a>
+                    
+                        <a class="social-link" href="https://www.linkedin.com/in/francesca-lumor/?locale=en_US">
+                            <i class="fab fa-linkedin social-icon"></i>
+                        </a>
+                    
+                        <a class="social-link" href="https://github.com/AkpeneLu/">
+                            <i class="fab fa-github social-icon"></i>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h3>Contactform here</h3>
+            </section>
         </section>
 
         <footer>
@@ -48,6 +108,14 @@
                 <a class="social-link" href="https://www.linkedin.com/in/francesca-lumor/?locale=en_US">
                     <i class="fab fa-linkedin social-icon"></i>
                 </a>
+
+                <a class="social-link" href="https://github.com/AkpeneLu/">
+                    <i class="fab fa-github social-icon"></i>
+                </a>
+            </div>
+
+            <div class="copyright">
+                <a class="copyrightLink" href="http://falumor.com/">Francesca A. Lumor</a>
             </div>
         </footer>
 
