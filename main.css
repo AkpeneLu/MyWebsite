@@ -8,7 +8,7 @@ html {
     background-color: rgb(27, 27, 27);
     background-blend-mode: multiply;
 
-    font-family: 'Josefin Slab', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -23,20 +23,23 @@ html {
 
 header {
     background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    width: 100%;
+    transition:background 0.5s ease;
     padding: 20px;
 }
 
 header.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: black;
-  top: 0;
+  border-bottom: solid 1px rgba(211, 211, 211, 0.9);
+  top: 10;
   width: 100%;
 }
 
-/*header.sticky + content {
+header.sticky + content {
   padding-top: 102px;
-}*/
+}
 
 .logo {
     display: block;
@@ -49,13 +52,18 @@ header.sticky {
 .logo img {
     width: 100%;
     height: auto;
+    /*-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); --use for favicon-logo*/
+}
+
+nav {
+    float: left;
 }
 
 nav ul li {
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
-    text-align: left;
     display: inline-flex;
     padding: 10px;
 }
@@ -68,7 +76,30 @@ nav ul li {
 .nav-link:hover {
     color: rgb(245, 39, 149);
 }
-.main {
+
+/* Social link in header */
+.socialInHeader {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    justify-content: right;
+}
+
+.social-linkInHeader {
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.social-linkInHeader:hover {
+    color: rgb(245, 39, 149);
+}
+
+.title {
     background-image: url(Background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -79,21 +110,22 @@ nav ul li {
 }
 
 h1 {
-    color: #EEE;
+    color: rgb(255, 255, 255);
     font-size: 120px;
     padding: 30px;
-    font-family: 'Josefin Slab';
+    font-family: 'Josefin Slab', sans-serif;
 }
 
 sub {
-    color: #EEE;
-    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
     padding: 30px;
 }
 
 h2 {
     color: rgb(0, 0, 0);
     font-size: 60px;
+    font-family: 'Josefin Slab';
     line-height: 70px;
     padding: 30px;
     
@@ -108,12 +140,17 @@ article {
 }
 
 .about {
-    background-color: rgb(245, 39, 149);
+    /*background-image: url(Birds.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: rgba(245, 39, 149, 1);
+    background-blend-mode: multiply;
     padding: 30px;
 }
 
 .art {
-    background-color: #EEE;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
 }
 
@@ -123,7 +160,7 @@ article {
 }
 
 footer{ 
-    background-color: #EEE;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
 }
 
@@ -157,25 +194,6 @@ footer{
 }
 
 .copyrightLink:hover {
-    color: rgb(245, 39, 149);
-}
-
-/* Social link in header */
-.socialInHeader {
-    display: flex;
-    flex-direction: row;
-    margin-left: 250%; /* need to fix this */
-    justify-content: space-evenly;
-}
-
-.social-linkInHeader {
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: black;
-}
-
-.social-linkInHeader:hover {
     color: rgb(245, 39, 149);
 }
 
