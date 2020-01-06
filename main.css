@@ -17,20 +17,22 @@ html {
     margin: 0%;
 }
 
-/*body {
-    display: inline;
-}*/
+/* Header and navigation styles */
 
 header {
     background-color: rgba(255, 255, 255, 0);
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    transition:background 0.5s ease;
+    transition: background 0.5s ease;
     padding: 20px;
 }
 
 header.sticky {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: solid 1px rgba(211, 211, 211, 0.9);
   top: 10;
@@ -41,29 +43,9 @@ header.sticky + content {
   padding-top: 102px;
 }
 
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 350px;
-}
-
-.logo img {
-    width: 100%;
-    height: auto;
-    /*-webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222); --use for favicon-logo*/
-}
-
-nav {
-    float: left;
-}
 
 nav ul li {
     list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
     display: inline-flex;
     padding: 10px;
 }
@@ -74,16 +56,25 @@ nav ul li {
 }
 
 .nav-link:hover {
-    color: rgb(245, 39, 149);
+    color: #de1f87;
+}
+
+.headerLogo {
+    height: 50px;
+    width: 50px;
+}
+
+.headerLogo img {
+    width: 100%;
+    height: auto;
 }
 
 /* Social link in header */
 .socialInHeader {
-    float: right;
-    display: flex;
-    flex-direction: row;
-    margin-right: 80px;
-    justify-content: right;
+    display: inline-flex;
+    padding-right: 50px;
+    /*margin-right: 50px;
+    justify-content: right;*/
 }
 
 .social-linkInHeader {
@@ -96,11 +87,13 @@ nav ul li {
 }
 
 .social-linkInHeader:hover {
-    color: rgb(245, 39, 149);
+    color: #de1f87;
 }
 
+/* Section styles */
+
 .title {
-    background-image: url(Background.jpg);
+    background-image: url(SENTERED.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,16 +102,28 @@ nav ul li {
     padding: 17%;
 }
 
-h1 {
-    color: rgb(255, 255, 255);
-    font-size: 120px;
-    padding: 30px;
-    font-family: 'Josefin Slab', sans-serif;
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    /*-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); --use for favicon-logo*/
 }
 
 sub {
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 26px;
+    font-variant-caps: petite-caps;
+    text-shadow: 2px 2px 4px black;
     padding: 30px;
 }
 
@@ -128,6 +133,7 @@ h2 {
     font-family: 'Josefin Slab';
     line-height: 70px;
     padding: 30px;
+    margin-top: 60px;
     
 }
 
@@ -139,26 +145,46 @@ article {
     padding-right: 17%;
 }
 
+.about .intro {
+    font-size: 20px;
+    font-weight: 800;
+}
+
 .about {
-    /*background-image: url(Birds.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    background-color: rgba(245, 39, 149, 1);
+    background-color: #de1f87;
     background-blend-mode: multiply;
     padding: 30px;
 }
 
 .art {
     background-color: rgb(255, 255, 255);
-    padding: 30px;
+    /*display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;*/
+}
+
+.artRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.artColumn {
+    flex: 30%;
+    padding: 0 4px;
+}
+
+.artColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
 .contact {
-    background-color: rgb(245, 39, 149);
+    background-color: #de1f87;
     padding: 30px;
 }
 
+/* Footer styles */
 footer{ 
     background-color: rgb(255, 255, 255);
     padding: 30px;
@@ -180,7 +206,7 @@ footer{
 }
 
 .social-link:hover {
-    color: rgb(245, 39, 149);
+    color: #de1f87;
 }
 
 .copyright {
@@ -194,7 +220,7 @@ footer{
 }
 
 .copyrightLink:hover {
-    color: rgb(245, 39, 149);
+    color: #de1f87;
 }
 
 hr {
