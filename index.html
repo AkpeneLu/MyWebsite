@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Francesca A. Lumor</title>
         <meta charset="UTF-8">
@@ -15,42 +15,40 @@
         
         <header id="myHeader">
             <nav>
-                <ul>
-                    <li><a class="nav-link" href="#about">ABOUT</a></li>
-                    <li><a class="nav-link" href="#art">ART</a></li>
-                    <li><a class="nav-link" href="#contact">CONTACT</a></li>
-                </ul>
+                <a class="nav nav-to-about" href="#about">ABOUT</a>
+                <a class="nav nav-to-art" href="#art">ART</a>
+                <a class="nav nav-to-contact" href="#contact">CONTACT</a>
             </nav>
 
             <a class="headerLogo" href="index.html">
                 <img src="BlackLogo.png" alt="Black logo">
             </a>
 
-            <div class="socialInHeader">
-                <a class="social-linkInHeader" href="https://www.instagram.com/francescas_art/">
+            <nav class="socialInHeader">
+                <a class="nav social-linkInHeader" href="https://www.instagram.com/francescas_art/">
                     <i class="fab fa-instagram social-icon"></i>
                 </a>
             
-                <a class="social-linkInHeader" href="https://www.linkedin.com/in/francesca-lumor/?locale=en_US">
+                <a class="nav social-linkInHeader" href="https://www.linkedin.com/in/francesca-lumor/?locale=en_US">
                     <i class="fab fa-linkedin social-icon"></i>
                 </a>
             
-                <a class="social-linkInHeader" href="https://github.com/AkpeneLu/">
+                <a class="nav social-linkInHeader" href="https://github.com/AkpeneLu/">
                     <i class="fab fa-github social-icon"></i>
                 </a>
-            </div>
+            </nav>
         </header>
 
         <section class="title">
             <!--<h1>Francesca A. Lumor</h1>-->
             <figure class="logo">
-                <img src="WhiteLogo.png" alt="my initials FAL in a logo"/>
+                <img src="WhiteLogo.png" alt="my initials FAL in a logo">
             </figure>
             
             <sub><i>" Art is not what you see, but what you make others see "</i> - Edgar Degas</sub>
         </section>
 
-        <section class="about" id="about">
+        <section id="about" class="about">
             <h2>Francesca Akpene Lumor</h2>
             <article class="intro">
                 I am a Norwegian self-taught artist with a bachelor’s degree in Psychology from the University of Oslo, currently studying Computer Science.
@@ -71,7 +69,7 @@
             </article>
         </section>
 
-        <section class="art" id="art">
+        <section id="art" class="art">
             <div class="artRow">
                 <!--place art here-->
                 <div class="artColumn">
@@ -108,7 +106,7 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <div class="contactText">
                 <article class=smallContactText>
@@ -160,6 +158,10 @@
                 <a class="social-link" href="https://github.com/AkpeneLu/">
                     <i class="fab fa-github social-icon"></i>
                 </a>
+
+                <a class="social-link" href="mailto:francesca.lumor@gmail.com">
+                    <i class="fas fa-envelope social-icon"></i>
+                </a>
             </div>
 
             <hr>
@@ -169,6 +171,6 @@
             </div>
         </footer>
 
-        <script src="trying.js"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
