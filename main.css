@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     width: 100%;
     transition: background 0.5s ease;
-    padding: 20px;
+    padding: 10px;
 }
 
 header.sticky {
@@ -41,6 +41,10 @@ header.sticky {
 
 header.sticky + content {
   padding-top: 102px;
+}
+
+.in-header {
+    width: 33vw;
 }
 
 .nav {
@@ -60,19 +64,25 @@ header.sticky + content {
     color: #de1f87;
 }
 
+.anchor {
+    padding-left: 20px;
+    text-align: left;
+}
+
 .headerLogo {
     height: 50px;
     width: 50px;
 }
 
 .headerLogo img {
-    width: 100%;
+    width: inherit;
     height: auto;
 }
 
 /* Social link in header */
 .socialInHeader {
     padding-right: 50px;
+    text-align: right;
 }
 
 .social-linkInHeader {
@@ -108,8 +118,7 @@ header.sticky + content {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
-    height: 350px;
+    width: 27vw;
 }
 
 .logo img {
@@ -123,10 +132,11 @@ header.sticky + content {
 
 sub {
     color: rgb(255, 255, 255);
-    font-size: 26px;
+    font-size: 2vw;
     font-variant-caps: petite-caps;
     text-shadow: 2px 2px 4px black;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -258,7 +268,7 @@ footer{
 }
 
 .copyrightLink {
-    font-size: 13px;
+    font-size: 14px;
     color: black;
     text-decoration: none;
 }
