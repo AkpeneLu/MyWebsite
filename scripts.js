@@ -1,9 +1,8 @@
 window.onscroll = function () { stickyHeaderFunction() };
 
-var header = document.getElementById("myHeader");
-var nav = document.getElementsByClassName("nav");
-var social = document.getElementsByClassName("social-linkInHeader");
-var sticky = header.offsetTop;
+const header = document.getElementById("myHeader");
+const nav = document.getElementsByClassName("nav");
+const sticky = header.offsetTop;
 
 function stickyHeaderFunction() {
     if (window.pageYOffset > sticky) {
