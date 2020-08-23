@@ -11,6 +11,10 @@ html {
     margin: 0%;
 }
 
+a:hover {
+    color: #de1f87;
+}
+
 /* Header and navigation styles */
 
 header {
@@ -44,10 +48,6 @@ header.sticky {
     color: black;
 }
 
-.nav:hover {
-    color: #de1f87;
-}
-
 .anchor {
     padding-left: 20px;
     text-align: left;
@@ -71,10 +71,6 @@ header.sticky {
 
 .social-linkInHeader {
     font-size: 20px;
-}
-
-.social-linkInHeader:hover {
-    color: #de1f87;
 }
 
 /* Section styles */
@@ -174,37 +170,26 @@ article {
 }
 
 .smallContactText {
-    text-align: right;
-}
-
-.socialBig {
-    display: flex;
-    flex-direction: row;
-    margin-left: 50%;
-    margin-right: 50%;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
 .socialRow {
     display: flex;
-    flex-direction: row;
-    margin-left: 50%;
-    margin-right: 50%;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 0 4px;
 }
 
 .socialColumn {
     flex: 30%;
-    padding: 0 4px;
+    padding: 20px;
 }
 
 .social-linkWhite {
     font-size: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 40px;
+    padding: 20px;
+    text-decoration: none;
     color: black;
 }
 
@@ -221,9 +206,7 @@ footer{
 .social {
     display: flex;
     flex-direction: row;
-    margin-left: 50%;
-    margin-right: 50%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .social-link {
@@ -232,10 +215,6 @@ footer{
     margin-right: 20px;
     margin-bottom: 25px;
     color: rgb(165, 165, 165);
-}
-
-.social-link:hover {
-    color: #de1f87;
 }
 
 .copyright {
@@ -248,12 +227,4 @@ footer{
 .copyrightLink {
     color: black;
     text-decoration: none;
-}
-
-.copyrightLink:hover {
-    color: #de1f87;
-}
-
-hr {
-    color: black;
 }

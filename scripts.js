@@ -1,17 +1,12 @@
-window.onscroll = function () { stickyHeaderFunction() };
+window.onscroll = function () { stickyHeaderFunction() }
 
-const header = document.getElementById("myHeader");
-const nav = document.getElementsByClassName("nav");
-const sticky = header.offsetTop;
+const header = document.getElementById("myHeader")
+const sticky = header.offsetTop
 
-function stickyHeaderFunction() {
+const stickyHeaderFunction = () => {
     if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-        //nav.classList.add("sticky");  not working
-        //social.classList.add("sticky");
+        header.classList.add("sticky")
     } else {
-        header.classList.remove("sticky");
-        //nav.classList.remove("sticky");  not working
-        //social.classList.remove("sticky");
+        header.classList.remove("sticky")
     }
 }
